@@ -11,7 +11,9 @@ fromText.addEventListener("keyup", () => {
 });
 
 translateBtn.addEventListener("click", () => {
+    toText.textContent = ""
     let text = fromText.value.trim()
     console.log(text)
+    toText.textContent = text
     if(!text) return;
 });
