@@ -25,7 +25,9 @@ exchageIcon.addEventListener("click", () => {
 fromText.addEventListener("keyup", () => {
     if(!fromText.value) {
         toText.value = "";
+        
     }
+    console.log(fromText.value)
 });
 
 translateBtn.addEventListener("click", () => {
