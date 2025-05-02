@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>translator</title>
-    <link rel="stylesheet" href="stylesheet.css"/>
+    <title>Langauge Translator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- language translation app -->
-     <div class="container">
-        <div class="wrapper">
-            <div class="text-input">
-                <!-- input app -->
-                <textarea spellcheck="false" class="from-text" placeholder="Enter-text"></textarea>
-                <!-- output -->
-                <textarea spellcheck="false" readonly disabled class=""to-text" placeholder="Translation"></textarea>
-            </div>
+
+    <!-- <h1> Translate with Joshua Alana</h1> -->
+ <div class="container">
+    <div class="wrapper">
+        <div class="text-input">
+            <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+            <textarea spellcheck="false" readonly disabled class="to-text"
+            placeholder="Translation"></textarea>
         </div>
-     </div>
+        <ul class="controls">
+            <li class="row from">
+                <div class="icons">
+                    <i id="from" class="fas fa-volume-up"></i>
+                    <i id="from" class="fas fa-copy"></i>
+                </div>
+                <select></select>
+            </li>
+
+            <li class="exchange">
+                <i class="fas fa-exchange-alt"></i>
+            </li>
+            <li class="row to">
+                <select></select>
+                <div class="icons">
+                    <i id="to" class="fas fa-volume-up"></i>
+                    <i id="to" class="fas fa-copy"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <button>Translate Text</button>
+ </div>   
+
+ <script src="js/countries.js"></script>
+ <script src="js/script.js"></script>
 </body>
 </html>
